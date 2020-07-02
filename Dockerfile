@@ -1,5 +1,6 @@
 From ubuntu:latest
 
+ENV DEBIAN_FRONTEND=noninteractive 
 RUN apt -qq update && apt -y -qq install git curl wget cmake build-essential lsb-core unzip && apt clean
 
 WORKDIR /
