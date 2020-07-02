@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the dependencies debian docker image
+      run: docker build . --file Dockerfile --tag lidar-to-depth-image-converter-build
+    - name: Build the lidar to depth image converter
+      run: docker run -v $(pwd):/lidar-to-depth-image-converter lidar-to-depth-image-converter-build ./build.sh
+    - name: Aritfact Preparation
+      uses: actions/upload-artifact@v1
+      with:
+        name: lidar-to-depth-image-converter
+        path: ./build/lidar-to-depth-image-converter
