@@ -1,5 +1,5 @@
 # KITTI LiDAR to Depth Image Converter
-This repository contains C++ based code implementation that converts the lidar frames of KITTI dataset into a 2D depth image
+This repository contains C++ based code implementation that converts the lidar frames of KITTI dataset into a 2D depth image. The idea behind this code was inspired from the [**Fast Range Image-based Segmentation of Sparse 3D Laser Scans for Online Operation**](https://ieeexplore.ieee.org/document/7759050) paper.
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. **Please be noted that this code is tested on Ubuntu OS only**.
 ### Prerequisites
