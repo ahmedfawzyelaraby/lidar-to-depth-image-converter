@@ -31,8 +31,8 @@ $ sudo make install
 ### Installation
 You can skip this step and use the already built executable in github actions.
 ```bash
-$ git clone https://github.com/ahmedfawzyelaraby/ros-images-extractor.git
-$ cd ros-images-extractor
+$ git clone https://github.com/ahmedfawzyelaraby/lidar-to-depth-image-converter.git
+$ cd lidar-to-depth-image-converter
 $ mkdir build
 $ cd build
 $ cmake ..
@@ -40,5 +40,5 @@ $ make -j
 ```
 ### Usage
 ```bash
-$ ./ros-bag-image-extractor -h # this command will get you the instructions you need to run the code.
+$ ./lidar-to-depth-image-converter -h # this command will get you the instructions you need to run the code.
 ```
